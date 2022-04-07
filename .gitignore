@@ -1,2 +1,4 @@
 /bin/
-/resources/
+/resources/*.pdf
+/resources/*.py
+/resources/*coursera
