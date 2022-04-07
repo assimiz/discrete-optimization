@@ -66,7 +66,7 @@ public class Solver {
           weights[i-1] = Integer.parseInt(parts[1]);
         }
         
-        new BruteForceResolver().solve(items, capacity, values, weights);
+        new DynamicProgrammingSolver().solve(items, capacity, values, weights);
                
     }
 }
