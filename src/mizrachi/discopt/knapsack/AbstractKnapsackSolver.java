@@ -1,5 +1,7 @@
 package mizrachi.discopt.knapsack;
 
+import java.util.Arrays;
+
 public abstract class AbstractKnapsackSolver implements KnapsackSolver {
 
 	//in
@@ -21,6 +23,9 @@ public abstract class AbstractKnapsackSolver implements KnapsackSolver {
 		this.capacity = capacity;
 		this.values = values;
 		this.weights = weights;
+		this.value = 0;
+		this.taken = new int[items];
+		Arrays.fill(this.taken, 0);
 		
 		run();
 		print();

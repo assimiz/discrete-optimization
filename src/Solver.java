@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mizrachi.discopt.knapsack.BruteForceResolver;
+import mizrachi.discopt.knapsack.DfsSolver;
 import mizrachi.discopt.knapsack.DynamicProgrammingSolver;
 import mizrachi.discopt.knapsack.GreedySolver;
 import mizrachi.discopt.knapsack.KnapsackSolver;
@@ -49,6 +50,8 @@ public class Solver {
 					knapsackSolver = new BruteForceResolver();
 				} else if (solver.equals("dynamic")) {
 					knapsackSolver = new DynamicProgrammingSolver();
+				} else if (solver.equals("dfs")) {
+					knapsackSolver = new DfsSolver();
 				}
 			}
 		}
