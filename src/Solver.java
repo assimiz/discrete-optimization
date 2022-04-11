@@ -48,7 +48,7 @@ public class Solver {
 					knapsackSolver = new GreedySolver();
 				} else if (solver.equals("brute")) {
 					knapsackSolver = new BruteForceResolver();
-				} else if (solver.equals("dynamic")) {
+				} else if (solver.equals("dp")) {
 					knapsackSolver = new DynamicProgrammingSolver();
 				} else if (solver.equals("dfs")) {
 					knapsackSolver = new DfsSolver();
@@ -96,7 +96,7 @@ public class Solver {
 			}
 			
 			else {
-				knapsackSolver = new GreedySolver();
+				knapsackSolver = new DfsSolver();
 			}
 		}
 
