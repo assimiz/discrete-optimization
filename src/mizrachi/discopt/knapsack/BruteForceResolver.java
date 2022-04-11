@@ -23,10 +23,12 @@ public class BruteForceResolver extends AbstractKnapsackSolver {
 				this.taken = take;
 			}
 		}
-
 	}
 	
-	
+	@Override
+	protected boolean isOptimal() {
+		return true;
+	}
 
 	// Function converting decimal to binary
 	private int[] toBinaryArray(int num) {

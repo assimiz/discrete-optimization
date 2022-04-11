@@ -22,4 +22,9 @@ public class GreedySolver extends AbstractKnapsackSolver {
 
 	}
 
+	@Override
+	protected boolean isOptimal() {
+		return false;
+	}
+
 }

@@ -28,6 +28,11 @@ public class DynamicProgrammingSolver extends AbstractKnapsackSolver {
 		}
 		
 	}
+
+	@Override
+	protected boolean isOptimal() {
+		return true;
+	}
 	
 	public int optimize(int k, int j) {
 		List<Integer> kjTuple = Arrays.asList(k, j);
